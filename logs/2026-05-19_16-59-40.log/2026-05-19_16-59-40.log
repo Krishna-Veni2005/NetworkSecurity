@@ -1,0 +1,21 @@
+[2026-05-19 16:59:45,045] root - INFO - Enter thr try bllock
+[2026-05-19 16:59:45,046] root - INFO - Initiate the data ingestion
+[2026-05-19 16:59:58,223] root - INFO - Performed train test split on the dataframe
+[2026-05-19 16:59:58,224] root - INFO - Exited split_data_as_train_test method of DataIngestion class
+[2026-05-19 16:59:58,224] root - INFO - Exporting training and testing data to file path 
+[2026-05-19 16:59:58,322] root - INFO - Exported training and testing data to file path successfully
+[2026-05-19 16:59:58,324] root - INFO - Data ingestion is completed and artifact is created
+[2026-05-19 16:59:58,337] root - INFO - Initiate the data validation
+[2026-05-19 16:59:58,489] root - INFO - Required number of columns: 2
+[2026-05-19 16:59:58,490] root - INFO - Dataframe has columns: 31
+[2026-05-19 16:59:58,490] root - INFO - Required number of columns: 2
+[2026-05-19 16:59:58,490] root - INFO - Dataframe has columns: 31
+[2026-05-19 16:59:58,688] root - INFO - Data validation is completed and artifact is created
+[2026-05-19 16:59:58,688] root - INFO - Entered the initiate_data_transformation method of DataTransformation class
+[2026-05-19 16:59:58,688] root - INFO - Starting data transformation
+[2026-05-19 16:59:58,801] root - INFO - Entered the get_data_transformer_object method of DataTransformation class
+[2026-05-19 16:59:58,801] root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-05-19 16:59:58,823] root - INFO - Entered the save_object method of MainUtils class
+[2026-05-19 16:59:58,832] root - INFO - Data transformation is completed and artifact is created
+[2026-05-19 16:59:58,833] root - INFO - Model Training is started
+[2026-05-19 17:10:00,918] root - INFO - Entered the save_object method of MainUtils class

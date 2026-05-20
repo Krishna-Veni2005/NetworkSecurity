@@ -1,0 +1,23 @@
+[2026-05-19 22:51:46,618] root - INFO - Enter thr try bllock
+[2026-05-19 22:51:46,618] root - INFO - Initiate the data ingestion
+[2026-05-19 22:52:02,485] root - INFO - Performed train test split on the dataframe
+[2026-05-19 22:52:02,485] root - INFO - Exited split_data_as_train_test method of DataIngestion class
+[2026-05-19 22:52:02,485] root - INFO - Exporting training and testing data to file path 
+[2026-05-19 22:52:02,605] root - INFO - Exported training and testing data to file path successfully
+[2026-05-19 22:52:02,606] root - INFO - Data ingestion is completed and artifact is created
+[2026-05-19 22:52:02,613] root - INFO - Initiate the data validation
+[2026-05-19 22:52:02,782] root - INFO - Required number of columns: 2
+[2026-05-19 22:52:02,782] root - INFO - Dataframe has columns: 31
+[2026-05-19 22:52:02,782] root - INFO - Required number of columns: 2
+[2026-05-19 22:52:02,782] root - INFO - Dataframe has columns: 31
+[2026-05-19 22:52:02,997] root - INFO - Data validation is completed and artifact is created
+[2026-05-19 22:52:02,998] root - INFO - Entered the initiate_data_transformation method of DataTransformation class
+[2026-05-19 22:52:02,998] root - INFO - Starting data transformation
+[2026-05-19 22:52:03,074] root - INFO - Entered the get_data_transformer_object method of DataTransformation class
+[2026-05-19 22:52:03,074] root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-05-19 22:52:03,090] root - INFO - Entered the save_object method of MainUtils class
+[2026-05-19 22:52:03,097] root - INFO - Data transformation is completed and artifact is created
+[2026-05-19 22:52:03,097] root - INFO - Model Training is started
+[2026-05-19 22:56:11,806] root - INFO - Entered the save_object method of MainUtils class
+[2026-05-19 22:56:11,828] root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\05192026__225143\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9908293862743122, precision_score=0.9879421221864951, recall_score=0.9937335759045887), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9762295081967213, precision_score=0.9682926829268292, recall_score=0.984297520661157))
+[2026-05-19 22:56:11,831] root - INFO - Model training artifact is created
