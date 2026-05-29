@@ -20,7 +20,14 @@ from sklearn.ensemble import (
 )
 import mlflow
 import dagshub
-dagshub.init(repo_owner='Krishna-Veni2005', repo_name='NetworkSecurity', mlflow=True)
+
+import os
+import mlflow
+
+os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME", "")
+os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD", "")
+
+mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI", ""))
 
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,
