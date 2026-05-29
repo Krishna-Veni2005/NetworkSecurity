@@ -1,0 +1,30 @@
+[2026-05-29 18:28:15,099] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-05-29 18:28:15,112] dagshub - INFO - Accessing as Krishna-Veni2005
+[2026-05-29 18:28:16,475] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Krishna-Veni2005/NetworkSecurity "HTTP/1.1 200 OK"
+[2026-05-29 18:28:17,711] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-05-29 18:28:17,714] dagshub - INFO - Initialized MLflow to track repo "Krishna-Veni2005/NetworkSecurity"
+[2026-05-29 18:28:17,715] dagshub - INFO - Repository Krishna-Veni2005/NetworkSecurity initialized!
+[2026-05-29 18:29:14,018] root - INFO - start data ingestion
+[2026-05-29 18:29:24,473] root - INFO - Performed train test split on the dataframe
+[2026-05-29 18:29:24,474] root - INFO - Exited split_data_as_train_test method of DataIngestion class
+[2026-05-29 18:29:24,474] root - INFO - Exporting training and testing data to file path 
+[2026-05-29 18:29:24,541] root - INFO - Exported training and testing data to file path successfully
+[2026-05-29 18:29:24,542] root - INFO - data_ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\05292026__182808\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\05292026__182808\\data_ingestion\\ingested\\test.csv')
+[2026-05-29 18:29:24,543] root - INFO - start data validation
+[2026-05-29 18:29:24,671] root - INFO - Required number of columns: 2
+[2026-05-29 18:29:24,672] root - INFO - Dataframe has columns: 31
+[2026-05-29 18:29:24,672] root - INFO - Required number of columns: 2
+[2026-05-29 18:29:24,672] root - INFO - Dataframe has columns: 31
+[2026-05-29 18:29:24,836] root - INFO - data validation completed and artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\05292026__182808\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\05292026__182808\\data_validation\\validated\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\05292026__182808\\data_validation\\drift_report\\report.yaml')
+[2026-05-29 18:29:24,837] root - INFO - start data transformation 
+[2026-05-29 18:29:24,837] root - INFO - Entered the initiate_data_transformation method of DataTransformation class
+[2026-05-29 18:29:24,837] root - INFO - Starting data transformation
+[2026-05-29 18:29:24,919] root - INFO - Entered the get_data_transformer_object method of DataTransformation class
+[2026-05-29 18:29:24,920] root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-05-29 18:29:24,939] root - INFO - Entered the save_object method of MainUtils class
+[2026-05-29 18:29:24,943] root - INFO - Entered the save_object method of MainUtils class
+[2026-05-29 18:29:24,950] root - INFO - start model trainer
+[2026-05-29 18:37:27,766] root - INFO - Entered the save_object method of MainUtils class
+[2026-05-29 18:37:27,794] root - INFO - Entered the save_object method of MainUtils class
+[2026-05-29 18:37:27,813] root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\05292026__182808\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9904339945624812, precision_score=0.9877485438843141, recall_score=0.9931340872374798), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9859154929577465, precision_score=0.9842845326716294, recall_score=0.9875518672199171))
+[2026-05-29 18:37:27,815] root - INFO - model trainer completed and artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\05292026__182808\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9904339945624812, precision_score=0.9877485438843141, recall_score=0.9931340872374798), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9859154929577465, precision_score=0.9842845326716294, recall_score=0.9875518672199171))

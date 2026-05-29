@@ -1,3 +1,11 @@
 venv
 .env
 test_mongodb.py
+# Egg info
+*.egg-info/
+NetworkSecurity.egg-info/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyd

@@ -1,0 +1,6 @@
+[2026-05-29 18:39:02,209] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-05-29 18:39:02,224] dagshub - INFO - Accessing as Krishna-Veni2005
+[2026-05-29 18:39:03,306] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Krishna-Veni2005/NetworkSecurity "HTTP/1.1 200 OK"
+[2026-05-29 18:39:04,350] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-05-29 18:39:04,352] dagshub - INFO - Initialized MLflow to track repo "Krishna-Veni2005/NetworkSecurity"
+[2026-05-29 18:39:04,353] dagshub - INFO - Repository Krishna-Veni2005/NetworkSecurity initialized!
